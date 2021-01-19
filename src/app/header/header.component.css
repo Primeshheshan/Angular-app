@@ -1,7 +1,11 @@
 .navbar {
-  background-color: var(--primary-color);
+  background-image: linear-gradient(to left, #032d7a , #1d6bf9);;
   font-size: 18px;
   box-shadow: 0 2px 5px #5f96fb;
+  padding: 20px 0;
+}
+.navbar-brand {
+  margin-left: 10px;
 }
 .nav-item {  margin-right: 30px; }
 .navbar-toggler {
@@ -19,5 +23,9 @@
 }
 .dropdown-menu {
   border: none;
-  box-shadow: 0 2px 5px #d5d5d5;
+  box-shadow: 0 2px 5px #c0d4f8;
+  min-width: 10px !important;
+  max-width: 120px;
+  margin-left: 10px;
 }
+
