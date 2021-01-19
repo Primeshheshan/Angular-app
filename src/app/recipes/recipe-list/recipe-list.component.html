@@ -1,1 +1,23 @@
-<app-recipe-item></app-recipe-item>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn" mat-raised-button color="primary">Recipes</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+      <a href="#" *ngFor="let recipe of recipes">
+        <mat-card class="recipe-card">
+          <mat-card-title class="recipe-card__title">{{recipe.name}}</mat-card-title>
+          <mat-card-content class="recipe-card__content">
+            <p>{{recipe.description}}</p>
+          </mat-card-content>
+          <span class="recipe-card__img">
+            <img class="img-fluid" [src]="recipe.imagePath" alt="pizza-img">
+          </span>
+        </mat-card>
+      </a>
+      <app-recipe-item></app-recipe-item>
+    </div>
+</div>
+
