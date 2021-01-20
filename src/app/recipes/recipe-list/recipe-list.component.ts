@@ -10,7 +10,7 @@ export class RecipeListComponent implements OnInit {
 recipes: RecipeModel[] = [
   new RecipeModel('Pizza',
                   'This is pizza recipe',
-                  'https://bit.ly/2XWJGV3'),
+                  'https://bit.ly/2LEbzyZ'),
 
   new RecipeModel('burger',
                   'Ground beef, or minced cow meat mince or other meat used to make hamburgers',
