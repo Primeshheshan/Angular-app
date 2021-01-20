@@ -11,14 +11,26 @@
   </div>
   <div class="row">
     <div class="col-xs-12 recipe-selection">
-      <mat-form-field appearance="fill">
-        <mat-label>Manage Recipe</mat-label>
-        <mat-select disableRipple>
-          <mat-option value="1">Add to shopping list</mat-option>
-          <mat-option value="2">Edit recipe</mat-option>
-          <mat-option value="3">Delete recipe</mat-option>
-        </mat-select>
-      </mat-form-field>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle"
+                mat-raised-button
+                color="primary"
+                (click)="isCollapsed = !isCollapsed"
+                [attr.aria-expanded]="!isCollapsed"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+              Mangae Recipe
+        </button>
+        <ul class="dropdown-menu"
+            [ngbCollapse]="isCollapsed"
+            aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Add to shopping list</a></li>
+          <li><a class="dropdown-item" href="#">Edit recipe</a></li>
+          <li><a class="dropdown-item" href="#">Delete recipe</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="row">
