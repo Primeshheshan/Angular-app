@@ -1,8 +1,4 @@
-.recipe-selection {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
 .recipe-img {
   width: 70%;
 }
+.recipe-selection{ margin-bottom: 15px; }
