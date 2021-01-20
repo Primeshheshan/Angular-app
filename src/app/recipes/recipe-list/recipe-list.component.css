@@ -5,7 +5,7 @@
   margin: 5px;
 }
 .recipe-card:hover {
-  background-color: #eee;
+  background-color: #f4fafe;
 }
 
 .recipe-card__title {
