@@ -1,12 +1,12 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xs-12 recipe-img">
-      <img src="https://bit.ly/2LEbzyZ" alt="pizza" class="img-fluid">
+    <div class="col-xs-12">
+      <h2>{{recipeItem.name}}</h2>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-12">
-      <h2>Recipe Name</h2>
+    <div class="col-xs-12 recipe-img">
+      <img [src]="recipeItem.imagePath" alt="pizza" class="img-fluid">
     </div>
   </div>
   <div class="row">
@@ -35,7 +35,7 @@
   </div>
   <div class="row">
     <div class="col-xs-12">
-      Description
+      {{recipeItem.description}}
     </div>
   </div>
 
