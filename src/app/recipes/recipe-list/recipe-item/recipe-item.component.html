@@ -1,1 +1,11 @@
-<p>recipe-item works!</p>
+<a href="#">
+  <mat-card class="recipe-card">
+    <mat-card-title class="recipe-card__title">{{recipeItem.name}}</mat-card-title>
+    <mat-card-content class="recipe-card__content">
+      <p>{{recipeItem.description}}</p>
+    </mat-card-content>
+    <span class="recipe-card__img">
+      <img class="img-fluid" [src]="recipeItem.imagePath" alt="pizza-img">
+    </span>
+  </mat-card>
+</a>

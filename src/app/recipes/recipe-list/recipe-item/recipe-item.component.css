@@ -1,0 +1,21 @@
+.recipe-card {
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  margin: 5px;
+}
+.recipe-card:hover {
+  background-color: #f4fafe;
+}
+
+.recipe-card__title {
+  font-size: 110%;
+  flex: 0 1 20%;
+  margin: 0;
+}
+.recipe-card__content { flex: 1; }
+.recipe-card__img { flex: 0 1 15%; }
+
+.recipe-btn { margin: 10px;}
+
+
