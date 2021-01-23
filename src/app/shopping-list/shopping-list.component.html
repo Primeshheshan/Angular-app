@@ -3,12 +3,14 @@
     <app-shopping-edit
     (ingredientAdded) = "onIngredientAdded($event)"></app-shopping-edit>
 
-    <mat-list *ngFor="let ingredient of ingredients">
-      <mat-list-item>
-        <mat-card>
-          <a>{{ingredient.ingName}} &mdash; ({{ingredient.ingAmount}})</a>
-        </mat-card>
-      </mat-list-item>
-    </mat-list>
+    <a href="#">
+      <mat-list  *ngFor="let ingredient of ingredients">
+        <mat-list-item>
+          <mat-card class="ingredient-list">
+            <a>{{ingredient.ingName}} &mdash; ({{ingredient.ingAmount}})</a>
+          </mat-card>
+        </mat-list-item>
+      </mat-list>
+    </a>
   </div>
 </div>
