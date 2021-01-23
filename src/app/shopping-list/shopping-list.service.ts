@@ -8,7 +8,6 @@ export class ShoppingListService {
   private ingredients: IngredientModel[] = [
     new IngredientModel('Potato',5),
     new IngredientModel('Tomato',10),
-    new IngredientModel('Tokkmato',10),
   ];
 
   getIngredients() {
@@ -18,5 +17,10 @@ export class ShoppingListService {
   addIngredient(ingredient: IngredientModel) {
     this.ingredients.push(ingredient);
     this.ingredientChanged.emit(this.ingredients.slice());
+  }
+
+  addIngredients(ingredients: IngredientModel[]) {
+    this.ingredients.push(...ingredients);
+    this.ingredientChanged.emit(this.ingredients.slice())
   }
 }
