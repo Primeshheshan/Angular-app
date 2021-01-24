@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //services
 import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
+    AppRoutingModule
 
   ],
   providers: [ShoppingListService],
