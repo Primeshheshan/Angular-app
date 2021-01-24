@@ -17,14 +17,14 @@ export class RecipeService {
                     ]),
 
     new RecipeModel('burger',
-                    'Ground beef, or minced cow meat mince or other meat used to make hamburgers',
+                    'Ground beef, or minced cow meat ',
                     'https://bit.ly/3iu86yA',
                     [
                       new IngredientModel('buns', 2)
                     ]),
 
     new RecipeModel(' Fried Rice',
-                    'Fried rice is a dish of cooked rice that has been stir-fried in a wok',
+                    'Fried rice is a dish of cooked rice that has been',
                     'https://bit.ly/38Xe0oO',
                     [
                       new IngredientModel('rice', 1)
