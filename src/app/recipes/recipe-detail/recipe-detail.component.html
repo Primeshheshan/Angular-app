@@ -25,10 +25,10 @@
         </button>
         <ul class="dropdown-menu"
             [ngbCollapse]="isCollapsed"
-            aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="#" (click)= "onAddToshoppingList()">Add to shopping list</a></li>
-          <li><a class="dropdown-item" href="#">Edit recipe</a></li>
-          <li><a class="dropdown-item" href="#">Delete recipe</a></li>
+            aria-labelledby="dropdownMenuButton" style="cursor: pointer;">
+          <li><a class="dropdown-item"  (click)= "onAddToshoppingList()">Add to shopping list</a></li>
+          <li><a class="dropdown-item" >Edit recipe</a></li>
+          <li><a class="dropdown-item" >Delete recipe</a></li>
         </ul>
       </div>
     </div>
