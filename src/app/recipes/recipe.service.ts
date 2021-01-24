@@ -34,11 +34,18 @@ export class RecipeService {
 
   constructor(private shopingListService: ShoppingListService) {}
 
+  // tslint:disable-next-line: typedef
   getRecipe() {
-    return this.recipes.slice(); //we can get a copy of array
+    return this.recipes.slice(); // we can get a copy of array
   }
 
+  // tslint:disable-next-line: typedef
   addIngredientToShoppingList(ingredientVar: IngredientModel[]) {
     this.shopingListService.addIngredients(ingredientVar);
   }
+
+  getRecipes(index: number) {
+    return this.recipes[index];
+  }
+
 }
