@@ -18,7 +18,10 @@ export interface AuthResponseData {
 export class AuthService {
   user = new Subject<UserModel>();
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private router: Router
+    ) {}
 
   signUp(email: string, password: string) {
     return this.http.post<AuthResponseData>(
@@ -57,6 +60,7 @@ export class AuthService {
 
   logout() {
     this.user.next();
+    this.router.navigate(['/auth']);
   }
 
   private handleAuthentication(email: string, userId: string, token: string, expiresIn: number) {
